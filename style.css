@@ -1,0 +1,138 @@
+
+/* Box Model */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f0ff;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4b0082, #8a2be2);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #2d174c;
+    padding: 15px;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d8b4fe;
+    transform: scale(1.1);
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin: 5px;
+    border: 2px solid #c4a1ff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(75, 0, 130, 0.12);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #6a0dad;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #c4a1ff;
+    padding: 12px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f3eaff;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #b399d4;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #8a2be2;
+}
+
+/* Button */
+button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #4b0082;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #2d174c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+}
